@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<title>covid9_tracker</title>
+	<style type="text/css">
+		body{
+			background-image: url("2.gif");
+		}
+		.text-success {
+			color: #28a745!important;
+			font-weight: 500;
+		}
+		.box-tke-V3 {
+			border-radius: 6px;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			background: #f8f9fa;
+			margin-bottom: 20px;
+		}
+		p.lead {
+			font-family: 'Roboto';
+			color: black;
+			font-weight: 400;
+		}
+		.box-vn {
+			background: #c9302c;
+			top: 1px;
+			left: 1px;
+		}
+		.box-vn, .box-tg {
+			border-radius: 6px;
+			padding: 3px 6px;
+			display: block;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.box-tg {
+			background: #3071a9;
+			left: 1px;
+			top: 126px;
+		}
+		.text-danger-new{color: #c9302c;font-weight: 500;}
+		.text-danger-new1{color: #666666;font-weight: 500;}
+		.text-warning1 {
+			color: #ff9c00;font-weight: 500;
+		}
+		.title{
+			font-family: 'Roboto', sans-serif;
+			font-size: 50px;
+			color: #009688;
+			transform: translateY(10px);
+			text-shadow: 4px 5px 3px #b9b5b5;
+		}
+		.title-box{
+			display: flex;
+		}
+		img.logo {
+			width: 100px;
+			transform: translateY(-20px);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 info"> 
+				<div class="wrap-box">
+					<div class="title-box">
+						<img src="logo.png" alt="logo" class="logo" data-v-7781ab49="">
+						<h3 class="title">Covid tracker</h3>
+					</div>
+					<p class="lead">Link api covid: <a href="https://github.com/ExpDev07/coronavirus-tracker-api">https://github.com/ExpDev07/coronavirus-tracker-api</a></p>
+					<p class="lead">Theo dõi tình trạng covid tại: <div id="title"></div></p>
+				</div>
+				<select class="form-group custom-select">
+					<option value="" class="option-select">---Chọn quốc gia---</option>
+				</select>
+				<!-- word aand vietnam -->
+				<div class="box-tke-V3 border position-relative" style="margin-top: 17px;">
+					<span class="box-vn position-absolute">Việt Nam</span>
+					<div class="row mt-5">
+
+						<div class="col text-center text-uppercase text-danger-new">
+							Số ca nhiễm <br> <span class="binhiem">???</span>
+						</div>
+						<div class="col text-center text-uppercase text-warning1">
+							Dân số <br> <span class="danso">???</span>
+						</div>
+						<div class="col text-center text-uppercase text-success">
+							Ngày cập nhật <br> <span class="capnhat">???</span>
+						</div>
+						<div class="col text-center text-uppercase text-danger-new1">
+							Tử vong <br> <span class="phantram">???</span>
+						</div>
+
+					</div><hr>
+					<span class="box-tg position-absolute">Thế giới</span>
+					<div class="row mt-5" style="margin-top: 55px !important;">
+
+						<div class="col text-center text-uppercase text-danger-new">
+							Tổng ca nhiễm <br> <span class="total_infected">???</span>
+						</div>
+						<div class="col text-center text-uppercase text-warning1">
+							Đang nhiễm <br> <span class="font24">???</span>
+						</div>
+						<div class="col text-center text-uppercase text-success">
+							Khỏi <br> <span class="total_rehibilitate">???</span>
+						</div>
+						<div class="col text-center text-uppercase text-danger-new1">
+							Tử vong <br> <span class="total_dead">???</span>
+						</div>
+
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
